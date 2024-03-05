@@ -1,7 +1,9 @@
-import { Inter } from "next/font/google";
+import { Comfortaa } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from '@/components/ui/theme-provider';
 
-const inter = Inter({ subsets: ["latin"] });
+
+const comf = Comfortaa({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +13,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={comf.className}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+        >
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
