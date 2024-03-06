@@ -29,7 +29,7 @@ export const ContainerScroll = ({ users, titleComponent }) => {
 
   return (
     <div
-      className="h-[50rem] md:h-[50rem] flex flex-col items-center justify-center relative p-2 md:p-20 pt-0"
+      className="card h-[50rem] md:h-[50rem] flex flex-col items-center justify-center relative p-2 md:p-20 pt-0"
       ref={containerRef}
     >
       <div className="flex justify-center items-center text-center">

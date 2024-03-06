@@ -8,7 +8,7 @@ import { FaGithub } from "react-icons/fa6";
 
 const Nav = () => {
   return (
-    <div className="pt-4 px-5 border-b-2 py-2 shadow-sm">
+    <div className="pt-4 px-5 border-b-2 py-2 shadow-sm bg-transparent">
       <div className="flex justify-between items-center">
         <div className="flex justify-between items-center">
           <span class="text-2xl mr-5 font-extrabold bg-gradient-to-r text-transparent bg-clip-text from-gray-100 to-gray-500">
