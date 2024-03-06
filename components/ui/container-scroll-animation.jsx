@@ -33,7 +33,9 @@ export const ContainerScroll = ({ users, titleComponent }) => {
       ref={containerRef}
     >
       <div className="flex justify-center items-center text-center">
-        <h1 className="text-6xl bg-gradient-to-r text-transparent bg-clip-text from-gray-200 to-gray-700">A developer for <br /> all things web.</h1>
+        <h1 className="text-6xl bg-gradient-to-r text-transparent bg-clip-text from-gray-200 to-gray-700">
+          A developer for <br /> all things web.
+        </h1>
       </div>
       <div
         className="w-full relative"
@@ -77,7 +79,14 @@ export const Card = ({ rotate, scale, translate, users }) => {
       }}
       className="max-w-3xl mx-auto h-[20rem] md:h-[30rem] w-full border-4 border-[#6C6C6C] p-6 bg-[#222222] rounded-[30px] shadow-2xl"
     >
-      <div className="bg-gray-100 h-full w-full rounded-2xl grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 overflow-hidden p-4">
+      <div
+        className="bg-gray-100 object-cover h-full w-full rounded-2xl grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 overflow-hidden p-4"
+        style={{
+          backgroundImage: "url(/card-bg.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         {users &&
           users.map((user, idx) => (
             <motion.div
