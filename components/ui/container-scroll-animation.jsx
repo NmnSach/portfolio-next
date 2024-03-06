@@ -29,11 +29,11 @@ export const ContainerScroll = ({ users, titleComponent }) => {
 
   return (
     <div
-      className="h-[50rem] md:h-[60rem] flex flex-col items-center justify-center relative p-2 md:p-20"
+      className="h-[50rem] md:h-[50rem] flex flex-col items-center justify-center relative p-2 md:p-20 pt-0"
       ref={containerRef}
     >
       <div className="flex justify-center items-center text-center">
-        <h1 className="text-6xl">A developer for <br /> all things web.</h1>
+        <h1 className="text-6xl bg-gradient-to-r text-transparent bg-clip-text from-gray-200 to-gray-700">A developer for <br /> all things web.</h1>
       </div>
       <div
         className="w-full relative"
